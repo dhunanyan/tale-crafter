@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.splash {
+  background: linear-gradient($primary-color, $primary-color-v2);
+  height: 100vh;
+  position: relative;
+
+  > img {
+    // filter: blur(20px);
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pages {
+    display: flex;
+    margin-top: 300px;
+    overflow: hidden;
+  }
+}

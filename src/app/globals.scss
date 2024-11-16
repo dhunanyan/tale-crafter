@@ -13,7 +13,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // color: var(--foreground);
   background: $primary-color;
   font-family: 'Poppins', sans-serif;
 
@@ -22,16 +21,16 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $alt-secondary-color;
-    border: 3px solid $alt-secondary-color;
+    background-color: $alt-color;
+    border: 3px solid $alt-color;
   }
 
   &::-webkit-scrollbar-track {
-    background: $primary-color-v2;
+    background: $primary-color;
   }
 
   &::selection {
-    background-color: $alt-secondary-color;
+    background-color: $alt-color;
     color: $tint-color;
   }
 
